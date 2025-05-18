@@ -18,154 +18,50 @@
   <body>
     <audio id="whooshSound" src="assets/whoosh.mp3" preload="auto"></audio>
     <audio id="typingSound" src="https://cdn.pixabay.com/audio/2021/09/06/audio_3d3b3e36cf.mp3" preload="auto"></audio>
-    
-
     <nav>
       <div class="logo">
         <img src="assets/logo2.png" class="logo-img" alt="Logo" /> | RIIGS BALL
       </div>
       <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#pemain">Pemain</a>
-        <a href="#timeline">Timeline</a>
-        <a href="#gallery">Galeri</a>
+        <a href="#" onclick="goToPage('home.html')">Home</a>
         <a href="#about">About</a>
       </div>
     </nav>
-    
+
     <section id="home">
-    <header class="hero">
-      <div class="hero-content">
-        <h1>
-          <i class="bi bi-trophy-fill"></i> Gelandang Tim Nasional Indonesia
-        </h1>
-        <p>Mengenang kiprah para maestro lini tengah dari masa ke masa</p>
-        <a class="btn" href="#pemain">Jelajahi</a>
-      </div>
-    </header>
-  </section>
-
+      <header class="hero">
+        <div class="hero-content">
+          <h1><i class="bi bi-trophy-fill"></i> Kritik dan Saran</h1>
+          <p>Kritik dan Saran untuk membangun RIIGS BALL menjadi lebih baik</p>
+          <a class="btn" href="#send">Send Us</a>
+        </div>
+      </header>
+    </section>
     <section class="interactive-intro text-center">
-      <h2>Menjadi Gelandang Itu...</h2>
-      <h3 id="dynamicText">Skill</h3>
+      <h2>Rincian Achievement...</h2>
+      <h3 id="dynamicText">Trophy</h3>
     </section>
-
-    <div class="container">
-      <section id="pemain" class="section text-center">
-        <h2 class="mb-5" style="color:#ff4e50; text-shadow: 0 0 8px #ff4e50;">Gelandang Timnas Indonesia</h2>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-4">
-            <div class="player-card h-100 p-3">
-              <a href="firman.html" class="player-link">
-                <img src="assets/firmanutina.jpg" alt="Firman Utina" class="img-fluid mb-3" />
-              </a>
-              <div class="tooltip-wrapper">
-                <h3>Firman Utina</h3>
-                <span class="tooltiptext" data-text="Clik Image to see more about Firman Utina"></span>
-              </div>           
-              <p>Kapten karismatik era 2000-an yang dikenal dengan visi bermain luar biasa.</p>
-              <div class="social-icons mt-2">
-                <a href="https://www.instagram.com/firmanutina1515/" target="_blank" class="me-3">
-                  <i class="bi bi-instagram"></i>
-                </a>
-                <a href="https://www.youtube.com/watch?v=1vmJ_JDGXZI" target="_blank">
-                  <i class="bi bi-youtube"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-      
-          <div class="col-md-4 mb-4">
-            <div class="player-card h-100 p-3">
-              <a href="evan.html" target="_blank" class="player-link">
-                <img src="assets/evandimas.jpeg" alt="Evan Dimas" class="img-fluid mb-3" />
-              </a>
-              <div class="tooltip-wrapper">
-          <h3>Evan Dimas</h3>
-          <span class="tooltiptext" data-text="Clik Image to see more about Evan Dimas"></span>
-        </div>
-              <p>Gelandang kreatif generasi baru yang membawa harapan besar pada timnas.</p>
-              <div class="social-icons mt-2">
-                <a href="https://www.instagram.com/evandimas/" target="_blank" class="me-3">
-                  <i class="bi bi-instagram"></i>
-                </a>
-                <a href="https://www.youtube.com/watch?v=O80hd9j04mE&ab_channel=MuzadidFootball" target="_blank">
-                  <i class="bi bi-youtube"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="player-card h-100 p-3">
-              <a href="thom.html">
-                <img src="assets/thom.jpg" alt="Thom Haye" class="img-fluid mb-3" />
-              </a>
-              <div class="tooltip-wrapper" class="player-link">
-                <h3>Thom Haye</h3>
-                <span class="tooltiptext" data-text="Clik Image to see more about Thom Haye"></span>
-              </div>
-              <p>Pemain diaspora yang kini menjadi pengatur tempo utama Garuda.</p>
-              <div class="social-icons mt-2">
-                <a href="https://www.instagram.com/thomhaye/" target="_blank" class="me-3">
-                  <i class="bi bi-instagram"></i>
-                </a>
-                <a href="https://www.youtube.com/watch?v=lT7wG6PBk4c&t=21s&ab_channel=JAKNOW" target="_blank">
-                  <i class="bi bi-youtube"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div style="text-align: center; margin-top: 40px;">
-            <button onclick="goToPage('profil.html')" class="rekor-button">
-              Profil Data Diri Pemain
-            </button>
-          </div>          
-        </div>
-      </section>
-      
-      <section id="timeline">
-      <div class="section timeline">
-        <h3>Timeline Maestro Garuda</h3>
-        <h4>2007 - Firman Utina Dinobatkan Menjadi Kapten Timnas Indonesia</h4>
-        <h4>2014 - Evan Dimas debut di Timnas Senior</h4>
-        <h4>2023 - Thom Haye tampil perdana dengan lambang garuda</h4>
-        <div style="text-align: center; margin-top: 40px;">
-          <button onclick="goToPage('rekor.html')" class="rekor-button">
-            Lihat Track Record dan Achievement 
-          </button>
-        </div>  
-      </section>
+      <section id="send">
+    <form class="futuristic-form" action="https://formspree.io/f/mpwdqvje" method="POST">
+      <h2>Kritik & Saran</h2>
+      <input type="text" name="name" placeholder="Nama Anda" required />
+      <input type="email" name="email" placeholder="Email Anda" required />
+      <textarea name="message" rows="6" placeholder="Tulis kritik atau saran Anda di sini..." required></textarea>
+      <button type="submit">Kirim</button>
+      <div id="formAlert" style="display: none;" class="futuristic-alert">
+        Terima kasih atas kritik dan saran Anda!
       </div>
-      <section id="gallery">
-        <div class="section gallery">
-          <h3>Galeri</h3>
-          <div class="gallery-item">
-              <a href="assets/firmanutina.jpg" download>
-                  <img src="assets/firmanutina.jpg" alt="Firman" />
-                 
-              </a>
-          </div>
-          <div class="gallery-item">
-              <a href="assets/evandimas.jpeg" download>
-                  <img src="assets/evandimas.jpeg" alt="Evan" />
-               
-              </a>
-          </div>
-          <div class="gallery-item">
-              <a href="assets/thom.jpg" download>
-                  <img src="assets/thom.jpg" alt="Thom" />
-              </a>
-          </div>
-      </div>
-      <div class="section testimonials">
-        <h3>Kata Legenda</h3>
-        <blockquote>
-          "Gelandang yang hebat bukan hanya soal operan, tapi bagaimana dia
-          mengatur napas tim."
-        </blockquote>
-        <cite>— Bambang Pamungkas</cite>
-      </div>
-    </section>
+    </form>
+  </section>
+    <br>
+    <div class="section testimonials">
+      <h3>Kata Legenda</h3>
+      <blockquote>
+        "Kami Menerima Segala Macam Bentuk Kritik dan Saran Untuk Membangun RIIGS BALL menjadi 
+        lebih baik."
+      </blockquote>
+      <cite>— Founder</cite>
+    </div>
     <section id="about" class="section about-section">
       <div class="container">
         <div class="about-content">
@@ -195,11 +91,6 @@
               </a>
             </div>
           </div>
-          </div>
-          <div style="text-align: center; margin-top: 30px;">
-            <button onclick="goToPage('form.html')" class="rekor-button">
-              Kirim Kritik & Saran
-            </button>
           </div>
         </div>
       </div>
@@ -426,6 +317,33 @@
   window.addEventListener('pageshow', () => {
     document.body.classList.add('fade-in');
     window.scrollTo(0, 1); // juga picu di pageshow
+  });
+</script>
+<script>
+  document.querySelector('.futuristic-form').addEventListener('submit', function (e) {
+    e.preventDefault(); // Mencegah reload halaman
+
+    const form = e.target;
+
+    // Kirim data ke Formspree (AJAX)
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        form.reset(); // Kosongkan form
+        document.getElementById('formAlert').style.display = 'block'; // Tampilkan alert
+      } else {
+        alert("Gagal mengirim. Silakan coba lagi.");
+      }
+    })
+    .catch(error => {
+      alert("Terjadi kesalahan.");
+    });
   });
 </script>
 
